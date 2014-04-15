@@ -1,0 +1,13 @@
+<ul class="notes-list">
+  {{#each}}
+    {{#link-to 'notes.note' this tagName='li' classNames="notes-list__note-link" activeClass="notes-list__note-link_active"}}
+      <span class="notes-list__note-title">
+        {{title}}
+      </span>
+    {{/link-to}}
+  {{/each}}
+</ul>
+
+<div class="selected-note">
+  {{outlet}}
+</div>

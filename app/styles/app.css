@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16;
+  background: url('/img/handmadepaper.png') repeat;
+  padding: 1em;
+  color: #333;
+}
+
+.selected-note__updated,
+.note-list__note-date {
+  color: #AAA;
+}
+
+.notes-list {
+  position: absolute;
+  width: 25%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-right: #E7E7E7 1px solid;
+  height: 90%;
+}
+
+
+.notes-list__note-title {
+  font-weight: 700;
+}
+
+.notes-list__note-link {
+  padding: .5em .5em .5em 0;
+  border-bottom: #E7E7E7 1px solid;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.notes-list__note-link_active {
+  background-color: #F0D97B;
+}
+
+.note-list__note-date {
+  display: inline;
+  float: right;
+}
+
+.selected-note {
+  margin-left: 28%;
+}
+
+.selected-note__input {
+  margin-top: 1em;
+  line-height: 1.5;
+  border: 0;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.selected-note__button {
+  background: transparent;
+  color: #F0D97B;
+  font-weight: 700;
+  float: right;
+  border: 0;
+  font-size: 2em;
+  line-height: 0.5em;
+
+}
+
+.notes-filter-input {
+  border: 0;
+  padding: .3em;
+  text-align:center;
+  outline: 0;
+  border-radius: .3em;
+  background-color: #E0E1E3;
+  width:25%;
+}
