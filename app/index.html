@@ -8,8 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script>
-      window.ENV = {{ENV}};
-      document.write('<base href="' + ENV.rootURL + '" />');
+      ENV = {
+        ENABLE_ALL_FEATURES: true
+      };
+      // window.ENV = {{ENV}};
+      // document.write('<base href="' + ENV.rootURL + '" />');
     </script>
 
     <link rel="stylesheet" href="assets/app.css">

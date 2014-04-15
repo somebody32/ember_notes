@@ -1,9 +1,13 @@
+{{input value=filter type="search" classNames="notes-filter-input" placeholder="Search"}}
+
 <ul class="notes-list">
-  {{#each}}
+  {{#each filteredNotes}}
     {{#link-to 'notes.note' this tagName='li' classNames="notes-list__note-link" activeClass="notes-list__note-link_active"}}
       <span class="notes-list__note-title">
         {{title}}
       </span>
+
+      {{format-date date=updated classNames='note-list__note-date' format='DD/MM/YY'}}
     {{/link-to}}
   {{/each}}
 </ul>

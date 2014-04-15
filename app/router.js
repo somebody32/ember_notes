@@ -1,5 +1,5 @@
 var Router = Ember.Router.extend({
-  rootURL: ENV.rootURL,
+  // rootURL: ENV.rootURL,
   location: 'hash'
 });
 
